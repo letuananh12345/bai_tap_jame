@@ -13,7 +13,7 @@ public class CalculatorController {
 
     @GetMapping("/calculators")
     public String showForm() {
-        return "form";
+        return "WEB-INF/form.jsp";
     }
 
     @RequestMapping("/calculate")
@@ -40,6 +40,6 @@ public class CalculatorController {
                 }
                 break;
         }
-        return "form";
+        return "WEB-INF/form.jsp";
     }
 }
